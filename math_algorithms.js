@@ -1,4 +1,4 @@
-﻿<script type="text/javascript">
+<script type="text/javascript">
 var operations_list = ["+", "-", "*", "/"];
 var operation = operations_list[Math.floor(Math.random()*operations_list.length)];
 document.write(operation);
