@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>BOOM QUICK MATHS</title>
+		<script src="math_algorithms.js"></script>
 		<link rel="stylesheet" type="text/css" href="qmis.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	</head>
@@ -10,8 +11,68 @@
 		<!-- <h1>MATH EXPLORER</h1> -->
 	</header>
 	<body>
+	<script>
+		var operations_list = ["+", "-", "*", "/"];
+		var operation = operations_list[Math.floor(Math.random()*operations_list.length)];
+		document.write("<br>");
+		if (operation == "+")
+		{
+			document.write(Math.floor(Math.random() * 100), " + ", Math.floor(Math.random() * 100));
+		}
+		else if (operation == '-')
+		{
+			document.write(Math.floor(Math.random() * 100), " - ", Math.floor(Math.random() * 100));
+		}
+		else if (operation == '*')
+		{
+			document.write(Math.floor(Math.random() * 10) + 1, " x ", Math.floor(Math.random() * 10) + 1);
+		}
+		else if (operation == '/')
+		{
+			var divisor = Math.floor(Math.random() * 100);
+			if (divisor % 2 == 0)
+			{
+				document.write(divisor, " / ", 2);
+			}
+			else if (divisor % 3 == 0)
+			{
+				document.write(divisor, " / ", 3);
+			}
+			else if (divisor % 4 == 0)
+			{
+				document.write(divisor, " / ", 4);
+			}
+			else if (divisor % 5 == 0)
+			{
+				document.write(divisor, " / ", 5);
+			}
+			else if (divisor % 6 == 0)
+			{
+				document.write(divisor, " / ", 6);
+			}
+			else if (divisor % 7 == 0)
+			{
+				document.write(divisor, " / ", 7);
+			}
+			else if (divisor % 8 == 0)
+			{
+				document.write(divisor, " / ", 8);
+			}
+			else if (divisor % 9 == 0)
+			{
+				document.write(divisor, " / ", 9);
+			}
+		}
+	</script>
+		<!-- <div class="start_button">
+			<button>START</button>
+		</div> -->
+		<div class = "start">
+			<input onclick="window.location.href = qmis_play.html" type="submit" class = "start_button" value="">
+		</div>
 	<div id="stars_bg">
 	</div>
+	<a href="qmis_play.html" id = "hidden_a">0000</a>
 	<!-- <img src="Math_explorer2.png" width = 50% height =50% id = "earth"> -->
 	</body>
 </html>

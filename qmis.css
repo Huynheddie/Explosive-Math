@@ -79,3 +79,13 @@ button:active {
 	position: absolute;
 	left:-20%;
 }
+
+#hidden_a {
+	/*background-color: red;*/
+	position: absolute;
+	top: 57%;
+	left: 32%;
+	font-size: 200px;
+	text-decoration: none;
+	/*opacity: 0;*/
+}

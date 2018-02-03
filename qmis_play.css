@@ -1,9 +1,9 @@
 body {
-	background: url("./backgrounds/title_page(updated).png") center center fixed;
+	background: url("./backgrounds/math_explorer(background_updated).png") center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
