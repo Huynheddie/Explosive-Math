@@ -29,6 +29,8 @@ img {
 }
 
 button {
+	position: absolute;
+	top:70%;
 	text-align: center;
 	border: none;
 	color: #ffffff;
@@ -50,10 +52,27 @@ button:active {
 }
 
 .start_button {
-	display: flex;
+	position: absolute;
+	top: 65%;
+	left: 33%;
+	background: url("./game models/start_button2.png") center no-repeat;
+	cursor: pointer;
+	width: 31%;
+	height: 24%;
+	background-size: cover;
+	border: none;
+	/*display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-top: 35%;
+	justify-content: center;*/
+	/*margin-top: 35%;*/
+}
+
+.start_button:hover {
+	background: url("./game models/start_button1.png") center no-repeat;
+	background-size: cover;
+	width: 31%;
+	height: 24%;
+
 }
 
 #earth {
