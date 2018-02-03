@@ -1,8 +1,44 @@
 ﻿<script type="text/javascript">
-var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+//var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
 document.write(Math.floor(Math.random() * 100), " + ", Math.floor(Math.random() * 100));
-<BR/>
-document.write(Math.floor(Math.random() * 100), " / ", Math.floor(Math.random() * 100));
+document.write("<br>");
+var divisor = Math.floor(Math.random() * 100);
+//Math.floor(Math.random() * 100)) % 1 == 0
+if (divisor % 2 == 0)
+{
+	document.write(divisor, " / ", 2);
+}
+else if (divisor % 3 == 0)
+{
+	document.write(divisor, " / ", 3);
+}
+else if (divisor % 4 == 0)
+{
+	document.write(divisor, " / ", 4);
+}
+else if (divisor % 5 == 0)
+{
+	document.write(divisor, " / ", 5);
+}
+else if (divisor % 6 == 0)
+{
+	document.write(divisor, " / ", 6);
+}
+else if (divisor % 7 == 0)
+{
+	document.write(divisor, " / ", 7);
+}
+else if (divisor % 8 == 0)
+{
+	document.write(divisor, " / ", 8);
+}
+else if (divisor % 9 == 0)
+{
+	document.write(divisor, " / ", 9);
+}
+document.write("<br>");
 document.write(Math.floor(Math.random() * 100), " - ", Math.floor(Math.random() * 100));
-document.write(Math.floor(Math.random() * 100), " x ", Math.floor(Math.random() * 100));
+document.write("<br>");
+document.write(Math.floor(Math.random() * 10) + 1, " x ", Math.floor(Math.random() * 10) + 1);
+document.write("<br>");
 </script>
