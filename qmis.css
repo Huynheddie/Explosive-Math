@@ -1,10 +1,16 @@
 html {
-	background-color: black;
+	font-family: "Open Sans";
 }
 
 h1 {
 	text-align: center;
-	color: red;
+	color: #3378e8;
+	font-size: 100px;
+	text-shadow:
+	-.75px -.75px 0 white,
+    .75px -.75px 0 white,
+    -.75px .75px 0 white,
+    .75px .75px 0 white;
 }
 
 img {
@@ -12,3 +18,35 @@ img {
 	bottom: 0;
 	
 }
+
+button {
+	border: none;
+	color: #ffffff;
+	padding: 1% 2%;
+	font-size: 600%;
+	background-color: #3378e8;
+	border: 8px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color:#f44336;
+}
+
+button:active {
+	background-color: #d63024;
+}
+
+
+
+.start_button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+body {
+	background: url("stars_bg.png");
+	background-color: #cccccc;
