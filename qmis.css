@@ -6,3 +6,9 @@ h1 {
 	text-align: center;
 	color: red;
 }
+
+img {
+	position: absolute;
+	bottom: 0;
+	
+}
