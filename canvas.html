@@ -1,0 +1,25 @@
+﻿<canvas id="icanvas" width=2000 height=1000>
+<script type="text/javascript">
+var imgCall = new Image();
+var canvas = document.getElementById('icanvas');
+var context = canvas.getContext("2d");
+var x = 1500;
+var y = -200;
+//var straightdiag = 1;
+//var rightdiag = 2;
+//var leftdiag = 3;
+
+
+imgCall.onload = direction;
+imgCall.src = "http://i.stack.imgur.com/Rk0DW.png";   // load image
+
+function direction() {
+  context.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
+  context.drawImage(imgCall, x, y);                       // draw image at current position
+
+  y += 1;
+  x -= 2
+  if (y < 400) requestAnimationFrame(direction)        // loop
+}
+</script>
+</canvas>
