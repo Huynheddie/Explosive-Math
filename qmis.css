@@ -29,18 +29,18 @@ button {
 	color: #ffffff;
 	padding: 1% 2%;
 	font-size: 600%;
-	background-color: #3378e8;
+	background-color: #a8a8a8;
 	border: 8px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
 }
 
 button:hover {
-	background-color: #a8a8a8;
+	background-color: #3378e8;
 }
 
 button:active {
-	background-color: #727272;
+	background-color: #2356a8;
 }
 
 .start_button {
@@ -48,4 +48,9 @@ button:active {
 	align-items: center;
 	justify-content: center;
 	margin-top: 10%;
+}
+
+#earth {
+	position: absolute;
+	left:-20%;
 }
