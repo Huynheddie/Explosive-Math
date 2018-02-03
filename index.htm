@@ -1,5 +1,8 @@
 ﻿<script type="text/javascript">
-//var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+var operations_list = ["+", "-", "*", "/"];
+var operation = operations_list[Math.floor(Math.random()*operations_list.length)];
+document.write(operation);
+document.write("<br>");
 document.write(Math.floor(Math.random() * 100), " + ", Math.floor(Math.random() * 100));
 document.write("<br>");
 var divisor = Math.floor(Math.random() * 100);
