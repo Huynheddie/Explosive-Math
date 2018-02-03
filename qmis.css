@@ -1,6 +1,11 @@
 body {
-	background: url("stars_bg.png");
-	background-color: #cccccc;
+	background: url("title_page(updated).png") center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 html {
@@ -21,18 +26,19 @@ h1 {
 img {
 	position: absolute;
 	bottom: 0;
-	
 }
 
 button {
+	text-align: center;
 	border: none;
 	color: #ffffff;
 	padding: 1% 2%;
-	font-size: 600%;
+	font-size: 400%;
 	background-color: #a8a8a8;
 	border: 8px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
+	outline-style: none
 }
 
 button:hover {
@@ -47,7 +53,7 @@ button:active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 10%;
+	margin-top: 35%;
 }
 
 #earth {
