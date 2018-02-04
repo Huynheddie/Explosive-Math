@@ -66,7 +66,7 @@
 					  	document.getElementById("start_button").style.visibility = "visible";
 					  	document.getElementById("high_score").style.visibility = "visible";	
 					  	var newScore = localStorage.getItem("score");
-					  	if (newScore > score){
+					  	if (newScore >= score){
 					  		
 					  		document.getElementById("high_score_value").innerHTML = newScore;
 					  	}
