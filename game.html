@@ -36,18 +36,21 @@
 					var imgCall = new Image();
 					var canvas = document.getElementById('icanvas');
 					var context = canvas.getContext("2d");
-					var kd = 1;
 					var x = 231;
 					var y = 30;
 					
 					imgCall.onload = direction;
 					imgCall.src = "./game models/Asteroid(Updated 3).png";   // load image
 
+					var widthRatio = canvas.width / imgCall.width;
+					var heightRatio = canvas.height / imgCall.height;
+					var ratio = Math.min(widthRatio, heightRatio);
+
 					function direction() {
 					  context.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
-					  context.drawImage(imgCall, x,y);                       // draw image at current position
 
-					  
+					  context.drawImage(imgCall, x * ratio, y * ratio);                       // draw image at current position
+
 					  y += .6;
 					  x -= 1.2;
 					  if (y < 133)     // loop
