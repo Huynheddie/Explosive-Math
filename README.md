@@ -1,3 +1,3 @@
-# Quick-Maths-In-Space
+# Math Explorers
 
-Welcome to Quick-Maths-In-Space, a game where Big Shaq teaches you how to do quick maths!
+Welcome to Math Explorers, a game where Earth's existence is dependent on your ability to perform quick math operations.
