@@ -21,6 +21,11 @@
 					<button id = "sub_button" onclick="Main1()"><br>
 				</form>
 			</div>
+			<div id = "high_score">
+				<p id = "beat_hi_score">Congratulations! You beat the highest score!</p>
+				<p>High Score:</p>
+				<p id = "high_score_value"></p>
+			</div>
 			<div id="scoreboard">
 				<p id="your_score">Your Score:</p>
 				<p id="score_end"></p>
@@ -59,6 +64,16 @@
 					  	document.getElementById("body").style.backgroundSize= "100% 100%";
 					  	document.getElementById("answer_field").style.visibility = "hidden";
 					  	document.getElementById("start_button").style.visibility = "visible";
+					  	document.getElementById("high_score").style.visibility = "visible";	
+					  	var newScore = localStorage.getItem("score");
+					  	if (newScore > score){
+					  		
+					  		document.getElementById("high_score_value").innerHTML = newScore;
+					  	}
+					  	else{
+					  		document.getElementById("beat_hi_score").style.visibility = "visible";	
+					  		document.getElementById("high_score_value").innerHTML = score;
+					  	}
 					  }
 					 
 					}
@@ -80,6 +95,7 @@
 						document.getElementById("success").innerHTML = "Nice!";
 						document.getElementById("success").className = "success_animation";
 						score += 5;
+						localStorage.setItem("score", score);
 						document.getElementById("score_end").innerHTML = score;
 						x = 231;
 						y = 30;

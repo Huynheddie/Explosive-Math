@@ -196,3 +196,24 @@ button {
 	top: 41%;
 	left: 3%;
 }
+
+#high_score {
+	text-shadow: 2px 2px black;
+	font-family: Helvetica;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 25%;
+	right: 3%;
+	bottom: 5%;
+	width: 23%;
+	opacity: .8;
+	text-align: center;
+	font-size: 50px;
+}
+
+#beat_hi_score {
+	visibility: hidden;
+	top:5%;
+	font-size: 40px;
+}
