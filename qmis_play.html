@@ -9,17 +9,19 @@
 		<body>
 			<div class = "eq_box">
 				<p id = "equation"></p>
+				<form>
+					<input type = "text" id = "answer_field"><br>
+				</form>
 			</div>
 			<script>
 			var operations_list = ["+", "-", "*", "/"];
 			var operation = operations_list[Math.floor(Math.random()*operations_list.length)];
-			document.write("<br>");
 			var equation;
 			if (operation == "+")
 			{
 				equation = (Math.floor(Math.random() * 100));
 				equation +=  " + ";
-				equation += Math.floor(Math.random() * 100)
+				equation += Math.floor(Math.random() * 100);
 			}
 			else if (operation == '-')
 			{
@@ -83,6 +85,12 @@
 					equation = divisor;
 					equation += " / ";
 					equation +=  9;
+				}
+				else if (divisor % 10 == 0)
+				{
+					equation = divisor;
+					equation += " / ";
+					equation +=  10;
 				}
 			}
 			document.getElementById("equation").innerHTML = equation;
