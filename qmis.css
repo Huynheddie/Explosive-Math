@@ -1,6 +1,6 @@
 body {
 	content: '';
-	background: url("../backgrounds/Title_Page(Updated).png") center center fixed;
+	background: url("./backgrounds/Title_Page(Updated).png") center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -57,7 +57,7 @@ button:active {
 	outline: none;
 	top: 65%;
 	left: 33%;
-	background: url("../game models/start_button2.png") center no-repeat;
+	background: url("./game models/Start_Button2.png") center no-repeat;
 	cursor: pointer;
 	width: 31%;
 	height: 24%;
@@ -66,7 +66,7 @@ button:active {
 }
 
 .start_button:hover {
-	background: url("../game models/start_button1.png") center no-repeat;
+	background: url("./game models/Start_Button1.png") center no-repeat;
 	background-size: cover;
 	width: 31%;
 	height: 24%;
