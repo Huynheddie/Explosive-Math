@@ -40,7 +40,7 @@
 					var y = 30;
 					
 					imgCall.onload = direction;
-					imgCall.src = "./game models/Asteroid(Updated 3).png";   // load image
+					imgCall.src = "./game models/Asteroid(Updated).png";   // load image
 
 					var widthRatio = canvas.width / imgCall.width;
 					var heightRatio = canvas.height / imgCall.height;
@@ -49,7 +49,7 @@
 					function direction() {
 					  context.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
 
-					  context.drawImage(imgCall, x * ratio, y * ratio);                       // draw image at current position
+					  context.drawImage(imgCall, x,y, imgCall.width * .3, imgCall.height * .3);                       // draw image at current position
 
 					  y += .6;
 					  x -= 1.2;

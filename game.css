@@ -29,8 +29,8 @@ button {
 	height: 25%;
 	padding-left: 4%;
 	padding-right: 4%;
-	bottom: 0;
-	right: 10%;
+	bottom: 5%;
+	right: 35%;
 	color: white;
 }
 
@@ -62,7 +62,7 @@ button {
 	z-index: 1;
 	position: absolute;
 	outline: none;
-	top: 65%;
+	top: 55%;
 	left: 34%;
 	background: url("./game models/Start_Button2.png") center no-repeat;
 	cursor: pointer;
@@ -217,4 +217,21 @@ button {
 	top:5%;
 	font-size: 40px;
 	color: #ffe14c;
+}
+
+#ins_ok {
+	position: absolute;
+	color: #f46b42;
+	background-color: #f9f9f9;
+	padding: 1% 2%;
+	top: 40%;
+	left: 20%;
+	padding: 2% 2%;
+	font-size: 20px;
+	border-radius: 10px;
+	opacity: .95;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #c9cccb;
 }
