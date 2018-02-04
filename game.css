@@ -63,7 +63,7 @@ button {
 	position: absolute;
 	outline: none;
 	top: 65%;
-	left: 33%;
+	left: 34%;
 	background: url("./game models/Start_Button2.png") center no-repeat;
 	cursor: pointer;
 	width: 31%;
@@ -216,4 +216,5 @@ button {
 	visibility: hidden;
 	top:5%;
 	font-size: 40px;
+	color: #ffe14c;
 }
