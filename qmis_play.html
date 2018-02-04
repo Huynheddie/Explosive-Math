@@ -38,7 +38,13 @@
 			else if (operation == '/')
 			{
 				var divisor = Math.floor(Math.random() * 100);
-				if (divisor % 2 == 0)
+				if (divisor % 1 == 0)
+				{
+					equation = divisor;
+					equation += " / ";
+					equation += 1;
+				}
+				else if (divisor % 2 == 0)
 				{
 					equation = divisor;
 					equation += " / ";
