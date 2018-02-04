@@ -85,3 +85,7 @@ button:active {
 	font-size: 200px;
 	text-decoration: none;
 }
+
+#song {
+	visibility: hidden;
+}

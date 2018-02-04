@@ -27,7 +27,7 @@ button {
 	height: 25%;
 	padding-left: 4%;
 	padding-right: 4%;
-	bottom: 0%;
+	bottom: 0;
 	right: 10%;
 }
 
@@ -40,19 +40,40 @@ button {
 	height: 70%;
 }
 
-#equation {
-	font-size: 25px;
-}
-
 #sub_button {
-	right: 5%;
+	right: 3%;
 	position: absolute;
-	top: 65%;
+	bottom: 10%;
 	font-size: 20px;
 	width: 15%;
+	height: 25%;
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 2px;
 	opacity: 1;
 }
 
+#song {
+	visibility: hidden;
+}
+
+#answer_field {
+	position:absolute;
+	bottom: 10%;
+	width: 60%;
+	height: 25%;
+	right: 20%;
+	text-align: center;
+	font-size: 150%;
+}
+
+#equation {
+	font-size: 200%;
+	margin-bottom: 0;
+	margin-top: 5%;
+}
+
+#answer {
+	font-size: 150%;
+	margin-top: 5%;
+}

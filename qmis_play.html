@@ -24,6 +24,8 @@
 				if (answerValue == answerTrue)
 				{
 					document.getElementById("answer").innerHTML = "Great job!!";
+				} else {
+					document.getElementById("answer").innerHTML = "That's not correct :(";
 				}
 			}
 			</script>
@@ -79,5 +81,8 @@
 					}
 				</script>
 			</canvas>
+		<audio controls autoplay loop id = "song">
+			<source src="./audio files/hubbub.mp3" type="audio/ogg">
+		</audio>
 		</body>
 	</header>
