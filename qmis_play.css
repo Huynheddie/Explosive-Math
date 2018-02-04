@@ -43,6 +43,7 @@ button {
 }
 
 #sub_button {
+	visibility: hidden;
 	right: 3%;
 	position: absolute;
 	bottom: 10%;
@@ -64,7 +65,7 @@ button {
 	bottom: 10%;
 	width: 60%;
 	height: 25%;
-	right: 20%;
+	right: 19.5%;
 	text-align: center;
 	font-size: 150%;
 }
@@ -78,4 +79,81 @@ button {
 #answer {
 	font-size: 150%;
 	margin-top: 5%;
+}
+
+#success {
+	position: absolute;
+	bottom:70%;
+	right: 33%;
+	font-size: 50px;
+	color: #F0E10F;
+	opacity: 0;
+}
+
+.success_animation {
+	animation-name: "success";
+	-webkit-animation-name: "success";
+	-webkit-animation-duration: .25s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-duration:.25s;
+}
+
+.unsucc {
+	animation-name: "unsucc";
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-duration:.25s;
+	-webkit-animation-name: "unsucc";
+	-webkit-animation-duration: .25s;
+	
+}
+
+@keyframes unsucc {
+	from {
+		bottom:85%;
+		right: 33%;
+		opacity: 1;
+	}
+	to 	{
+		bottom: 55%;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes unsucc {
+	from {
+		bottom:85%;
+		right: 33%;
+		opacity:1;
+	}
+	to 	{
+		bottom: 55%;
+		opacity:0;
+	}
+}
+
+
+@keyframes success {
+	from {
+		bottom:55%;
+		right: 33%;
+		opacity: 0;
+	}
+	to 	{
+		bottom: 80%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes success {
+	from {
+		bottom:55%;
+		right: 33%;
+		opacity:0;
+	}
+	to 	{
+		bottom: 80%;
+		opacity:100;
+	}
 }
