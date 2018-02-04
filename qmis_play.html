@@ -11,6 +11,7 @@
 				<p id = "equation"></p>
 				<form>
 					<input type = "text" id = "answer_field"><br>
+					<input type = "submit" value = "Enter" id = "submit_field"><br>
 				</form>
 			</div>
 			<script>
@@ -110,7 +111,6 @@
 
 					imgCall.onload = direction;
 					imgCall.src = "./game models/asteroid(updated 3).png";   // load image
-					// imgCall.rotate(45)
 
 					function direction() {
 					  context.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
