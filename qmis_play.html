@@ -9,13 +9,24 @@
 		<body>
 			<div class = "eq_box">
 				<p id = "equation"></p>
-				<p id = "answer"></p>
-				<form>
+				<p id = "answer">Please enter the answer</p>
+				<form onsubmit="return false">
 					<input type = "text" id = "answer_field"><br>
-					<input type = "submit" value = "Enter" id = "submit_field"><br>
+					<button id = "sub_button" onclick="Main1()"><br>
 				</form>
 			</div>
 			<script src="Logic.js"></script>
+			<script>
+			function Main1() {
+				var answerValue = parseInt(document.getElementById("answer_field").value);
+				var answerTrue = document.getElementById("answer").value;
+				// document.getElementById("answer_field").innerHTML = "WOOH";
+				if (answerValue == answerTrue)
+				{
+					document.getElementById("answer").innerHTML = "Great job!!";
+				}
+			}
+			</script>
 			<canvas id="icanvas" class = "canvas">
 				<script type="text/javascript">
 					var imgCall = new Image();

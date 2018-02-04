@@ -104,5 +104,13 @@ var operations_list = ["+", "-", "*", "/"];
 				}
 			}
 			document.getElementById("equation").innerHTML = equation;
-			document.getElementById("answer").innerHTML = answer;
-			// return answer;
+			document.getElementById("answer").value = answer;
+
+function Main()
+{
+	var answerValue = document.getElementById("answer_field").value;
+	if (answerValue == answer)
+	{
+		document.getElementById("answer_field").innerHTML = "WOOH";
+	}
+}
