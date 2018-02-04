@@ -62,7 +62,7 @@ button {
 	z-index: 1;
 	position: absolute;
 	outline: none;
-	top: 45%;
+	top: 65%;
 	left: 33%;
 	background: url("./game models/Start_Button2.png") center no-repeat;
 	cursor: pointer;
@@ -176,4 +176,23 @@ button {
 		bottom: 80%;
 		opacity:100;
 	}
+}
+
+#scoreboard {
+	position: absolute;
+	font-family: Helvetica;
+	text-shadow: 2px 2px black;
+	visibility: hidden;
+	color: white;
+	font-size: 50px;
+	left: 40%;
+	top: 10%;
+	text-align: center;
+}
+
+#earthdest {
+	visibility: hidden;
+	position: absolute;
+	top: 41%;
+	left: 3%;
 }

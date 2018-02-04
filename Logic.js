@@ -6,8 +6,8 @@ function Main()
 			var answer;
 			if (operation == "+")
 			{
-				var add1 = Math.floor(Math.random() * 100);
-				var add2 = (Math.floor(Math.random() * 100));
+				var add1 = Math.floor(Math.random() * 21);
+				var add2 = (Math.floor(Math.random() * 21));
 				equation = add1;
 				equation +=  " + ";
 				equation += add2;
@@ -15,8 +15,8 @@ function Main()
 			}
 			else if (operation == '-')
 			{
-				var minus1 = (Math.floor(Math.random() * 100));
-				var minus2 = Math.floor(Math.random() * 100);
+				var minus1 = (Math.floor(Math.random() * 21));
+				var minus2 = Math.floor(Math.random() * 21);
 				equation = minus1;
 				equation += ' - ';
 				equation += minus2;
@@ -33,7 +33,7 @@ function Main()
 			}
 			else if (operation == '/')
 			{
-				var divisor = Math.floor(Math.random() * 100);
+				var divisor = Math.floor(Math.random() * 21);
 				if (divisor % 1 == 0)
 				{
 					equation = divisor;
