@@ -6,7 +6,6 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="qmis_play.css">
 	</head>
-	<header>
 		<body>
 			<div class = "eq_box">
 				<p id = "equation"></p>
@@ -18,19 +17,19 @@
 			</div>
 			<script src="Logic.js"></script>
 			<script>
-			Main();
-			function Main1() {
-				var answerValue = parseInt(document.getElementById("answer_field").value);
-				var answerTrue = document.getElementById("answer").value;
-				document.getElementById("answer_field").value = "";
-				if (answerValue == answerTrue)
-				{
-					document.getElementById("answer").innerHTML = "Great job!! Please enter an answer.";
-					Main();
-				} else {
-					document.getElementById("answer").innerHTML = "That's not correct :(";
+				Main();
+				function Main1() {
+					var answerValue = parseInt(document.getElementById("answer_field").value);
+					var answerTrue = document.getElementById("answer").value;
+					document.getElementById("answer_field").value = "";
+					if (answerValue == answerTrue)
+					{
+						document.getElementById("answer").innerHTML = "Great job!! Please enter an answer.";
+						Main();
+					} else {
+						document.getElementById("answer").innerHTML = "That's not correct :(";
+					}
 				}
-			}
 			</script>
 			<canvas id="icanvas" class = "canvas">
 				<script type="text/javascript">
@@ -85,8 +84,7 @@
 				</script>
 			</canvas>
 		<audio controls autoplay loop id = "song">
-			<source src="audio files/hubbub.mp3" type="audio/ogg">
+			<source src="audio files/Hubbub.mp3" type="audio/ogg">
 		</audio>
 		</body>
-	</header>
 </html>
