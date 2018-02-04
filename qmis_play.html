@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+		<title>Math Explorer</title>
 		<link rel="stylesheet" type="text/css" href="qmis_play.css">
 	</head>
 	<header>
@@ -67,7 +68,7 @@
 					var imgCall = new Image();
 					var canvas = document.getElementById('icanvas');
 					var context = canvas.getContext("2d");
-					var x = 0;
+					var x = 231;
 					var y = 0;
 					//var straightdiag = 1;
 					//var rightdiag = 2;
@@ -75,7 +76,8 @@
 
 
 					imgCall.onload = direction;
-					imgCall.src = "./game models/asteroid.png";   // load image
+					imgCall.src = "./game models/asteroid(updated 3).png";   // load image
+					// imgCall.rotate(45)
 
 					function direction() {
 					  context.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
@@ -83,7 +85,7 @@
 
 					  y += 1;
 					  x -= 2
-					  if (y < 400) requestAnimationFrame(direction)        // loop
+					  if (y < 110) requestAnimationFrame(direction)        // loop
 					}
 				</script>
 			</canvas>
