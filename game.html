@@ -75,7 +75,7 @@
 					  		document.getElementById("high_score_value").innerHTML = newScore;
 
 					  	}
-					  	else if (newScore < score) {
+					  	else {
 					  		document.getElementById("beat_hi_score").style.visibility = "visible";
 					  		document.getElementById("high_score_value").innerHTML = score;
 					  	}
@@ -86,7 +86,6 @@
 			<script src="Logic.js"></script>
 			<script>
 				var score = 0;
-				var newScore = 0;
 				document.getElementById("score_end").innerHTML = score;
 				Main();
 				function Main1() {
