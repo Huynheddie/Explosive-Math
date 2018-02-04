@@ -53,6 +53,7 @@ button:active {
 
 .start_button {
 	position: absolute;
+	outline: none;
 	top: 65%;
 	left: 33%;
 	background: url("./game models/start_button2.png") center no-repeat;
@@ -61,10 +62,6 @@ button:active {
 	height: 24%;
 	background-size: cover;
 	border: none;
-	/*display: flex;
-	align-items: center;
-	justify-content: center;*/
-	/*margin-top: 35%;*/
 }
 
 .start_button:hover {
@@ -81,11 +78,10 @@ button:active {
 }
 
 #hidden_a {
-	/*background-color: red;*/
+	background-color: red;
 	position: absolute;
 	top: 57%;
 	left: 32%;
 	font-size: 200px;
 	text-decoration: none;
-	/*opacity: 0;*/
 }
