@@ -6,7 +6,12 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="qmis_play.css">
 	</head>
-		<body>
+		<div class = "start">
+			<form>
+				<input type="button" class = "start_button" onclick="window.location.href = 'qmis_play.html'" id = "start_button">
+			</form>
+		</div>
+		<body id = "body"> 
 			<div class = "eq_box">
 				<p id = "equation"></p>
 				<p id = "answer">Please enter an answer</p>
@@ -16,31 +21,12 @@
 					<button id = "sub_button" onclick="Main1()"><br>
 				</form>
 			</div>
-			<script src="Logic.js"></script>
-			<script>
-				Main();
-				function Main1() {
-					var count = Math.random();
-					var answerValue = parseInt(document.getElementById("answer_field").value);
-					var answerTrue = document.getElementById("answer").value;
-					document.getElementById("answer_field").value = "";
-					if (answerValue == answerTrue)
-					{
-						document.getElementById("answer").innerHTML = "Please enter an answer";
-						document.getElementById("success").innerHTML = "Nice!";
-						document.getElementById("success").className = "success_animation";
-						Main();
-					} else {
-						document.getElementById("answer").innerHTML = "That's not correct :(";
-						document.getElementById("success").className = "unsucc";
-					}
-				}
-			</script>
 			<canvas id="icanvas" class = "canvas">
 				<script type="text/javascript">
 					var imgCall = new Image();
 					var canvas = document.getElementById('icanvas');
 					var context = canvas.getContext("2d");
+					var kd = 1;
 					var x = 231;
 					var y = 30;
 					
@@ -51,12 +37,45 @@
 					  context.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
 					  context.drawImage(imgCall, x, y);                       // draw image at current position
 					  
-					  y += 1;
-					  x -= 2;
-					  if (y < 133) requestAnimationFrame(direction)        // loop
+					  y += .6;
+					  x -= 1.2;
+					  if (y < 133)     // loop
+					  {
+					  	requestAnimationFrame(direction);
+					  } else {
+					  	document.getElementById("equation").innerHTML = "You lost!";
+					  	document.getElementById("answer").innerHTML = "Press Start to try again!";
+					  	document.getElementById("success").innerHTML = "";
+					  	context.clearRect(0,0, canvas.width, canvas.height);
+					  	document.getElementById("body").style.background = "url('./backgrounds/Math_Explorer(Background).png') center center fixed";
+					  	document.getElementById("body").style.backgroundSize= "100% 100%";
+					  	document.getElementById("answer_field").style.visibility = "hidden";
+					  	document.getElementById("start_button").style.visibility = "visible";
+					  }
 					 
 					}
 				</script>
+			<script src="Logic.js"></script>
+			<script>
+				Main();
+				function Main1() {
+					var answerValue = parseInt(document.getElementById("answer_field").value);
+					var answerTrue = document.getElementById("answer").value;
+					document.getElementById("answer_field").value = "";
+					if (answerValue == answerTrue)
+					{
+						document.getElementById("answer").innerHTML = "Please enter an answer";
+						document.getElementById("success").innerHTML = "Nice!";
+						document.getElementById("success").className = "success_animation";
+						x = 231;
+						y = 30;
+						Main();
+					} else {
+						document.getElementById("answer").innerHTML = "That's not correct :(";
+						document.getElementById("success").className = "unsucc";
+					}
+				}
+			</script>
 			</canvas>
 		<audio controls autoplay loop id = "song">
 			<source src="audio files/Hubbub.mp3" type="audio/ogg">
