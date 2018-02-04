@@ -102,9 +102,10 @@
 					var context = canvas.getContext("2d");
 					var x = 231;
 					var y = 0;
-					//var straightdiag = 1;
-					//var rightdiag = 2;
-					//var leftdiag = 3;
+					//var straightdiag = 0;
+					//var rightdiag = 1;
+					//var leftdiag = 2;
+					//var straightleft = 3;
 
 
 					imgCall.onload = direction;
@@ -114,10 +115,36 @@
 					function direction() {
 					  context.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
 					  context.drawImage(imgCall, x, y);                       // draw image at current position
+					  var randomNum = Math.floor(Math.random() * 4);
 
-					  y += 1;
-					  x -= 2
-					  if (y < 110) requestAnimationFrame(direction)        // loop
+						if (randomNum == 0){
+							var x = 231;
+							var y = 0;
+					  		y += 1;
+					  		x -= 2;
+					  		if (y < 110) requestAnimationFrame(direction)        // loop
+					  	}
+					  	else if (randomNum == 1){
+					  		var x = 231;
+							var y = -50;
+					  		y += 2;
+					  		x -= 3;
+					  		if (y < 110) requestAnimationFrame(direction)
+					  	}
+					  	else if (randomNum == 2){
+					  		var x = 200;
+							var y = 0;
+					  		y += 1;
+					  		x -= 1;
+					  		if (y < 110) requestAnimationFrame(direction)
+					  	}
+					  	else if (randomNum == 3){
+					  		var x = 231;
+							var y = -100;
+					  		x -= 1;
+					  		if (y < 110) requestAnimationFrame(direction)
+					  	}
+
 					}
 				</script>
 			</canvas>
