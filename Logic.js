@@ -1,4 +1,6 @@
-var operations_list = ["+", "-", "*", "/"];
+function Main()
+{
+	var operations_list = ["+", "-", "*", "/"];
 			var operation = operations_list[Math.floor(Math.random()*operations_list.length)];
 			var equation;
 			var answer;
@@ -105,12 +107,4 @@ var operations_list = ["+", "-", "*", "/"];
 			}
 			document.getElementById("equation").innerHTML = equation;
 			document.getElementById("answer").value = answer;
-
-function Main()
-{
-	var answerValue = document.getElementById("answer_field").value;
-	if (answerValue == answer)
-	{
-		document.getElementById("answer_field").innerHTML = "WOOH";
-	}
 }

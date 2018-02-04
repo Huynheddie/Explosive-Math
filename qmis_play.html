@@ -17,13 +17,15 @@
 			</div>
 			<script src="Logic.js"></script>
 			<script>
+			Main();
 			function Main1() {
 				var answerValue = parseInt(document.getElementById("answer_field").value);
 				var answerTrue = document.getElementById("answer").value;
-				// document.getElementById("answer_field").innerHTML = "WOOH";
+				document.getElementById("answer_field").value = "";
 				if (answerValue == answerTrue)
 				{
-					document.getElementById("answer").innerHTML = "Great job!!";
+					document.getElementById("answer").innerHTML = "Great job!! Please enter an answer.";
+					Main();
 				} else {
 					document.getElementById("answer").innerHTML = "That's not correct :(";
 				}
